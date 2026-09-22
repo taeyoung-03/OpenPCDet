@@ -1,4 +1,4 @@
-DATASET: 'ONCEDataset'
+DATASET: 'ONCEDatasetNoCam'
 DATA_PATH: '../data/once'
 CLOUD_DATA_PATH: '/cache/once'
 
