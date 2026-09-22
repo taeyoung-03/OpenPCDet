@@ -34,5 +34,5 @@ b. Install the dependent libraries as follows:
   
 c. Install this `pcdet` library and its dependent libraries by running the following command:
 ```shell
-python setup.py develop
+python -m pip install --user -e .
 ```

@@ -6,7 +6,7 @@ from torch import Tensor
 from math import pi as PI
 
 
-@torch.jit.script
+# @torch.jit.script
 def quat_to_mat(quat_wxyz: Tensor) -> Tensor:
     """Convert scalar first quaternion to rotation matrix.
 
@@ -36,7 +36,7 @@ def mat_to_quat(mat: Tensor) -> Tensor:
     )
 
 
-@torch.jit.script
+# @torch.jit.script
 def quat_to_xyz(
     quat_wxyz: Tensor, singularity_value: float = PI / 2
 ) -> Tensor:
@@ -78,7 +78,7 @@ def quat_to_xyz(
     return xyz
 
 
-@torch.jit.script
+# @torch.jit.script
 def quat_to_yaw(quat_wxyz: Tensor) -> Tensor:
     """Convert scalar first quaternion to yaw (rotation about vertical axis).
 
@@ -96,7 +96,7 @@ def quat_to_yaw(quat_wxyz: Tensor) -> Tensor:
     return yaw_rad
 
 
-@torch.jit.script
+# @torch.jit.script
 def xyz_to_quat(xyz_rad: Tensor) -> Tensor:
     """Convert euler angles (xyz - pitch, roll, yaw) to scalar first quaternions.
 
@@ -125,7 +125,7 @@ def xyz_to_quat(xyz_rad: Tensor) -> Tensor:
     return quat_wxyz
 
 
-@torch.jit.script
+# @torch.jit.script
 def yaw_to_quat(yaw_rad: Tensor) -> Tensor:
     """Convert yaw (rotation about the vertical axis) to scalar first quaternions.
 
